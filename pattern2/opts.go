@@ -1,6 +1,6 @@
 package pattern2
 
-func DefaultConfig() Config {
+func NewDefaultConfig() Config {
 	return Config{
 		Attribute1: 10,
 		Attribute2: "default",
@@ -25,7 +25,7 @@ func (c Config) WithAttribute3True() Config {
 
 func NewCustomStruct() (*CustomStruct, error) {
 	return &CustomStruct{
-		config: DefaultConfig(),
+		config: NewDefaultConfig(),
 	}, nil
 }
 

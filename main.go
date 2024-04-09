@@ -22,7 +22,7 @@ func main() {
 	s3, _ := p2.NewCustomStruct()
 	fmt.Printf("%+v\n", s3)
 
-	config := p2.DefaultConfig().
+	config := p2.NewDefaultConfig().
 		WithAttribute1(33).
 		WithAttribute2("customAttribute2").
 		WithAttribute3True()
